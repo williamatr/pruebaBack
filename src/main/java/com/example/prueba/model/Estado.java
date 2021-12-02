@@ -2,6 +2,7 @@ package com.example.prueba.model;
 
 import java.io.Serializable;
 import java.util.List;
+import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,6 +15,7 @@ import javax. persistence.Table;
 import com.example.prueba.repository.EstadoRepository;
 
 @Entity
+@Data
 @Table (name="estado")
 public class Estado implements Serializable {
 	
